@@ -30,7 +30,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-CATLOGO = "https://telegra.ph/file/493268c1f5ebedc967eba.jpg"
+CATLOGO = "https://telegra.ph/file/779ea60e3048432cd50b8.jpg"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -53,7 +53,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗛𝗲𝗹𝗽𝗲𝗿\
+    text = f"𝗫𝗧𝗥𝗘𝗠𝗘𝗨𝗦𝗘𝗥𝗕𝗢𝗧 𝗛𝗲𝗹𝗽𝗲𝗿\
         \n𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝗯𝘆 {mention}"
     buttons = [
         (
@@ -249,7 +249,7 @@ async def inline_handler(event):  # sourcery no-metrics
             buttons = [
                 (
                     Button.inline("Stats", data="stats"),
-                    Button.url("Repo", "https://github.com/sandy1709/catuserbot"),
+                    Button.url("Repo", "https://github.com/sandy1709/catt"),
                 )
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")
@@ -370,7 +370,7 @@ async def inline_handler(event):  # sourcery no-metrics
             _result = main_menu()
             result = builder.article(
                 title="© CatUserbot Help",
-                description="Help menu for CatUserbot",
+                description="Help menu for 𝗫𝘁𝗿𝗲𝗺𝗲 𝘂𝘀𝗲𝗿𝗯𝗼𝘁",
                 text=_result[0],
                 buttons=_result[1],
                 link_preview=False,
@@ -506,10 +506,10 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("Source code", "https://github.com/sandy1709/catuserbot"),
+                Button.url("Source code", "https://github.com/t"),
                 Button.url(
                     "Deploy",
-                    "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack&template=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack",
+                    "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack&template=https%3A%2F%2Fgk",
                 ),
             )
         ]
@@ -518,14 +518,14 @@ async def inline_handler(event):  # sourcery no-metrics
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁.", "md"
+            "𝗗𝗶𝗹 𝘀𝗲 𝗯𝘂𝗿𝗮 𝗹𝗴𝘁𝗮 𝗵𝗮𝗶.", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="𝘾𝙖𝙩𝙐𝙨𝙚𝙧𝙗𝙤𝙩",
+            title="𝗫𝗧𝗥𝗘𝗠𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧",
             description="Deploy yourself",
-            url="https://github.com/sandy1709/catuserbot",
+            url="https://github.com",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
